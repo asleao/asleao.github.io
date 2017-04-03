@@ -20,3 +20,5 @@ Acredito que como é uma mudança de paradigma desenvolver os testes antes da im
 A utilização da técnica para a implementação dos exercícios foi bem interessante. No segundo exercício, utilizei o BDD desde o início. Ou seja, criei os cenários e em seguida implementei as funcionalidades. Deu para verificar a evolução da solução e ver que ela está funcionando como deveria. O primeiro exercício foi feito da mesma maneira porém não foi finalizado. O terceiro e o quarto exercício foram feitos com a implementação já pronta. Ou seja, os cenários foram feitos depois da implementação. 
 
 Acredito que vale a pena aprender a desenvolver software desta maneira. Continuarei a estudar mais sobre a framework e aprender a utilizar os seus recursos da maneira correta para que minhas próximas soluções sejam cada vez melhores.
+
+Todos os códigos podem ser encontrados no [link](https://github.com/asleao/vale-a-pena-ver-denovo)
