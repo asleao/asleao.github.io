@@ -223,7 +223,7 @@ Salve as alterações.
  
 Para realizar a comunicação com a API do Github é necessário gerar um token de autorização. Para isso, acesse o link:
  
-   [https://github.com/settings/applications/new] (https://github.com/settings/applications/new)
+   [https://github.com/settings/applications/new](https://github.com/settings/applications/new)
  
 Em authorization call back URL coloque a seguinte url:
  
