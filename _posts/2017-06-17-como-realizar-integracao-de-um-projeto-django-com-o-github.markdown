@@ -87,9 +87,7 @@ Para rodar um projeto, você deve entrar na pasta onde o arquivo **manage.py** e
  
     python3 manage.py runserver
  
-Se tudo deu certo aparecerá a seguinte imagem:
- 
-![Runserver](/home/aleao/GoogleDrive/Trabalho_integrado_7_periodo/apresentações/pictures/figura_1.png)
+
  
 Para que o seu projeto fique bem estruturado, o Django possui um recurso chamado **app** que te permite modularizar o seu projeto. Assim o seu código ficará sempre organizado, facilitando sua leitura e eventuais manutenções.
  
@@ -189,7 +187,7 @@ Agora vá até **MIDDLEWARE_CLASSES** a adicione a seguinte linha:
       'django.middleware.clickjacking.XFrameOptionsMiddleware',   
       'social_django.middleware.SocialAuthExceptionMiddleware',  # <--
   ]
- ```
+ 
 Em **TEMPLATES** adicione as seguinte linhas:
  
   TEMPLATES = [
