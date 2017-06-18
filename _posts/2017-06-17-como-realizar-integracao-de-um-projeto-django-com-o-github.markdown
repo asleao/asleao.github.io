@@ -327,7 +327,7 @@ Por fim, crie a view **home** no arquivo **views.py**:
  
 Essas são as configurações básicas da biblioteca. Em seguida será mostrado um exemplo, de como fazer uma autenticação e criação de um repositório.
  
-Para a autenticação com o github, na da pasta templates crie uma pasta com o nome **registration** e em seguida crie o arquivo **login.html** dentre desta com o seguinte conteúdo:
+Para a autenticação com o github, na da pasta templates crie uma pasta com o nome **registration** e em seguida crie o arquivo **login.html** dentro desta com o seguinte conteúdo:
   
     {% raw %}
     {% extends 'base.html' %}
@@ -390,7 +390,7 @@ Agora crie a view e o método a seguir  no arquivo **views.py**:
             form = formRepositorio()
         return render(request, 'repositorio.html', {'form':form})
  
-A view **criar_repositorio** recebe o que o usuário digitou na tela, e em seguida chama a função cria_repositório_github() que realiza a comunicação com o micro serviço do github através de uma requisição POST. Este micro serviço foi desenvolvido previamente, utilizando a biblioteca PyGithub, e seu código poderá ser acessado neste [link](https://github.com/gabriellmb05/api-github-1). Para mais detalhes sobre quais métodos podem ser utilizados nesta biblioteca entre no [link](http://pygithub.readthedocs.io/en/latest/introduction.html). Ao logar com o github, a api social armazena o token de autorização no banco de dados. Dessa forma, quando for necessário realizar alguma comunicação com a api do Github, este poderá ser acessado como um atributo como pode ser visto na linha abaixo:
+A view **criar_repositorio** recebe o que o usuário digitou na tela, e em seguida chama a função **cria_repositorio_github()** que realiza a comunicação com o micro serviço do github através de uma requisição POST. Este micro serviço foi desenvolvido previamente, utilizando a biblioteca PyGithub, e seu código poderá ser acessado neste [link](https://github.com/gabriellmb05/api-github-1). Para mais detalhes sobre quais métodos podem ser utilizados nesta biblioteca entre no [link](http://pygithub.readthedocs.io/en/latest/introduction.html). Ao logar com o github, a api social armazena o token de autorização do usuário logado no banco de dados. Dessa forma, quando for necessário realizar alguma comunicação com a api do Github, este poderá ser acessado como um atributo como pode ser visto na linha abaixo:
  
     token = user.social_auth.get(provider='github').access_token
  
