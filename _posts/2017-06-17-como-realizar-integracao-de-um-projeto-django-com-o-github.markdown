@@ -27,7 +27,7 @@ O virtualenv é um ambiente virtual muito utilizado no desenvolvimento de aplica
  
 Para configura-lo é nescessário ter o Python instalado. Para instalá-lo abra um terminal e execute o comando: 
  
-  sudo apt-get install virtualenv
+    sudo apt-get install virtualenv
   
 Após a instalação, crie uma pasta onde o projeto será salvo com o comando:
  
@@ -39,7 +39,7 @@ Para criar o ambiente basta entrar na pasta criada acima e executar o comando, n
  
 Neste tutorial, o nome_do_ambiente será "env". Para ativá-lo execute o comando:
  
-  source env/bin/activate
+    source env/bin/activate
  
 Aparecerá a seguinte linha:
  
@@ -79,6 +79,7 @@ Em **Internationalization** altere as seguintes linhas:
  
     LANGUAGE_CODE = 'pt-br'
     TIME_ZONE = 'America/Sao_Paulo'
+
 O arquivo *urls.py* contém o resolvedor de padrões para as urls a serem utilizadas. No momento da configuração deste arquivo este conceito será melhor explicado.
  
 O arquivo *wsgi.py* é o script que fará o deploy do projeto. O WSGI é a plataforma padrão de deploy de aplicações do Django.
@@ -158,7 +159,7 @@ Utilize o projeto anterior com base para as próximas configurações e realize 
  
 Em seguida abra o arquivo **settings.py** , vá até a linha **INSTALLED_APPS** e insira a linha  'social_django':
  
-  INSTALLED_APPS = [
+    INSTALLED_APPS = [
         'django.contrib.admin',
         'django.contrib.auth',
         'django.contrib.contenttypes',
@@ -167,242 +168,248 @@ Em seguida abra o arquivo **settings.py** , vá até a linha **INSTALLED_APPS** 
         'django.contrib.staticfiles',
         'app',
         'social_django',  
-  ]
+    ]
  
 Execute o comando:
  
-  python3 manage.py migrate
+    python3 manage.py migrate
  
 Agora vá até **MIDDLEWARE_CLASSES** a adicione a seguinte linha:
  
-  MIDDLEWARE_CLASSES = [
-      'django.middleware.security.SecurityMiddleware',
-      'django.contrib.sessions.middleware.SessionMiddleware',
-      'django.middleware.common.CommonMiddleware',
-      'django.middleware.csrf.CsrfViewMiddleware',
-      'django.contrib.auth.middleware.AuthenticationMiddleware',
-      'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
-      'django.contrib.messages.middleware.MessageMiddleware',
-      'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    MIDDLEWARE_CLASSES = [
+        'django.middleware.security.SecurityMiddleware',
+        'django.contrib.sessions.middleware.SessionMiddleware',
+        'django.middleware.common.CommonMiddleware',
+        'django.middleware.csrf.CsrfViewMiddleware',
+        'django.contrib.auth.middleware.AuthenticationMiddleware',
+        'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
+        'django.contrib.messages.middleware.MessageMiddleware',
+        'django.middleware.clickjacking.XFrameOptionsMiddleware',
    
-      'social_django.middleware.SocialAuthExceptionMiddleware',  # <--
-  ]
+        'social_django.middleware.SocialAuthExceptionMiddleware',  # <--
+    ]
  
 Em **TEMPLATES** adicione as seguinte linhas:
  
-  TEMPLATES = [
-      {
-          'BACKEND': 'django.template.backends.django.DjangoTemplates',
-          'DIRS': [
-              PROJECT_DIR.child('templates'),
-          ],
-          'APP_DIRS': True,
-          'OPTIONS': {
-              'context_processors': [
-                  'django.template.context_processors.debug',
-                  'django.template.context_processors.request',
-                  'django.contrib.auth.context_processors.auth',
-                  'django.contrib.messages.context_processors.messages',
+    TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [
+             PROJECT_DIR.child('templates'),
+         ],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
    
-                  'social_django.context_processors.backends',  # <--
-                  'social_django.context_processors.login_redirect', # <--
-              ]
-          },
-      },
-  ]
+                'social_django.context_processors.backends',  # <--
+                'social_django.context_processors.login_redirect', # <--
+            ]
+        },
+    },
+    ]
  
 Adicione o código abaixo no final do arquivo:
  
-  AUTHENTICATION_BACKENDS = (
-      'social_core.backends.github.GithubOAuth2',
-      'django.contrib.auth.backends.ModelBackend',
-  )
+    AUTHENTICATION_BACKENDS = (
+        'social_core.backends.github.GithubOAuth2',
+        'django.contrib.auth.backends.ModelBackend',
+     ) 
  
 Salve as alterações.
  
 Para realizar a comunicação com a API do Github é necessário gerar um token de autorização. Para isso, acesse o link:
  
-  https://github.com/settings/applications/new
+    https://github.com/settings/applications/new
  
 Em authorization call back URL coloque a seguinte url:
  
-  http://localhost:8000/oauth/complete/github
+    http://localhost:8000/oauth/complete/github
  
 Caso sua aplicação esteja hospedada em algum servidor, substitua **localhost:8000** pelo endereço da mesma.
  
 Agora vá até o arquivo **settings.py** e adicione a seguinte linhas no final do arquivo:
  
-  SOCIAL_AUTH_GITHUB_KEY = <client_id>
-  SOCIAL_AUTH_GITHUB_SECRET = <client_secret>
+    SOCIAL_AUTH_GITHUB_KEY = <client_id>
+    SOCIAL_AUTH_GITHUB_SECRET = <client_secret>
  
 O calor de **client_id** e **client_secret** devem estar entre aspas simples. Exemplo:
   
-  SOCIAL_AUTH_GITHUB_KEY = '44fd4145a8d85fda4ff1'
+    SOCIAL_AUTH_GITHUB_KEY = '44fd4145a8d85fda4ff1'
  
 Para poder dar permissão para a criação do repositório, é necessário que o usuário authorize ao logar. Para isso, é necessário que o escopo do projeto peça ao usuário esse tipo de autorização. Adicione as seguintes linhas ao final do arquivo **settings.py**
  
-  SOCIAL_AUTH_GITHUB_SCOPE = [
-      'user',
-      'read:org',
-      'public_repo',
-      'admin:repo_hook',
-      'admin:org',
-      'user:email'
-  ]
+    SOCIAL_AUTH_GITHUB_SCOPE = [
+        'user',
+        'read:org',
+        'public_repo',
+        'admin:repo_hook',
+        'admin:org',
+        'user:email'
+    ]
  
 Vá até o arquivo **urls.py** e adicione as seguintes linhas:
   
-  from django.conf.urls import url, include
-  from django.contrib import admin
-  from django.contrib.auth import views as auth_views
+    from django.conf.urls import url, include
+    from django.contrib import admin
+    from django.contrib.auth import views as auth_views
    
-  from app.views import *
+    from app.views import *
    
-  urlpatterns = [
-      url(r'^$', home, name='home'),
-      url(r'^login/$', auth_views.login, name='login'),
-      url(r'^logout/$', auth_views.logout, name='logout'),
-      url(r'^oauth/', include('social_django.urls', namespace='social')),  # <--
-      url(r'^admin/', admin.site.urls),
-  ]
+    urlpatterns = [
+        url(r'^$', home, name='home'),
+        url(r'^login/$', auth_views.login, name='login'),
+        url(r'^logout/$', auth_views.logout, name='logout'),
+        url(r'^oauth/', include('social_django.urls', namespace='social')),  # <--
+        url(r'^admin/', admin.site.urls),
+    ]
  
 Agora adicione as seguintes linhas no arquivo **settings.py**:
  
-  LOGIN_URL = 'login'
-  LOGOUT_URL = 'logout'
-  LOGIN_REDIRECT_URL = 'home'
+    LOGIN_URL = 'login'
+    LOGOUT_URL = 'logout'
+    LOGIN_REDIRECT_URL = 'home'
  
 Dentro da pasta **app** crie uma pasta chamada **templates**:
  
-  app
-  ├── admin.py
-  ├── apps.py
-  ├── __init__.py
-  ├── migrations
-  │   └── __init__.py
-  ├── models.py
-  ├── templates  <---
-  ├── tests.py
-  └── views.py
+    app
+    ├── admin.py
+    ├── apps.py
+    ├── __init__.py
+    ├── migrations
+    │   └── __init__.py
+    ├── models.py
+    ├── templates  <---
+    ├── tests.py
+    └── views.py
  
 Esta pasta é responsável por conter as páginas html do projeto. 
  
 Crie um arquivo com o nome **base.html** e adicione o seguinte conteúdo:
  
-  {% load staticfiles %}
-  <!DOCTYPE html>
-  <html>
-  <head>
-      <title>Trabalho LES</title>
-  </head>
-  <body>
-    {%block content%}
-    {% endblock %}
-  </body>
-  </html>
+    {{{% load staticfiles %}}}
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Trabalho LES</title>
+    </head>
+     <body>
+        {{{%block content%}}}
+        {{{% endblock %}}}
+    </body>
+    </html>
  
  
 Em seguida crie o arquivo **home.html** com o seguinte conteúdo:
  
-  {% extends 'base.html' %}
 
-  {% block content %}
-    <p>Bem-vindo {{ user.username }}!</p>
+    {{{% extends 'base.html' %}}}
 
-  {% endblock %}
+    {{{% block content %}}}
+         <p>Bem-vindo {{ user.username }}!</p>
+
+    {{{% endblock %}}}
  
  
 Por fim, crie a view **home** no arquivo **views.py**:
  
-  from django.contrib.auth.decorators import login_required
-  from django.shortcuts import render
+    from django.contrib.auth.decorators import login_required
+    from django.shortcuts import render
    
-  @login_required
-  def home(request):
-      return render(request, 'templates/home.html')
+    @login_required
+    def home(request):
+        return render(request, 'templates/home.html')
  
 Essas são as configurações básicas da biblioteca. Em seguida será mostrado um exemplo, de como fazer uma autenticação e criação de um repositório.
  
 Para a autenticação com o github, na da pasta templates crie uma pasta com o nome **registration** e em seguida crie o arquivo **login.html** dentre desta com o seguinte conteúdo:
- 
-  {% extends 'base.html' %}
-   
-  {% block content %}
-    <h2>Login</h2>
-    <a href="{% url 'social:begin' 'github' %}">Login with GitHub</a><br>
-  {% endblock %}
+  
+    {% raw %}
+        {% extends 'base.html' %}
+     
+        {% block content %}
+            <h2>Login</h2>
+            <a href="{% url 'social:begin' 'github' %}">Login with GitHub</a><br>
+        {% endblock %}
+    { % endraw %}
  
 Pronto. Para testar se tudo está funcionando corretamente, vá até a pasta onde se encontra o arquivo **settings.py** pelo terminal e digite o comando:
  
-  python3 manage.py runserver
+    python3 manage.py runserver
  
 Entre no navegador e digite **localhost:8000** e tente realizar o login clicando no botão. Se tudo der certo, você será redirecionado para a página principal onde será exibido uma mensagem de boas vindas e as opções de criação de um repositório.
  
 Para testar a funcionalidade de criar um repositório no Github criamos um formulário onde o usuário digitará o nome do repositório e a linguagem do gitignore. Crie um arquivo dentro da pasta **app** com o nome **forms.py** e insira as seguintes linhas:
- 
-  from django import forms
+    {% raw %}
+     from django import forms
    
-  class formRepositorio(forms.Form):
-      nome = forms.CharField(label='Nome do repositório:', max_length=100)
-      linguagem = forms.CharField(label='Linguagem:', max_length=100)
- 
+     class formRepositorio(forms.Form):
+         nome = forms.CharField(label='Nome do repositório:', max_length=100)
+        linguagem = forms.CharField(label='Linguagem:', max_length=100)
+     {% endraw %}
 Em seguida cria um arquivo com o nome **repositorio.html** na pasta templates com o seguinte conteúdo:
- 
-  {% extends 'base.html' %}
-   
-  {% block content %}
-      <form method="post" action="{% url 'criar_repositorio' %}">
-          {% csrf_token %}
-          {{ form.as_p }}
-          <button type="submit">Criar</button>
-      </form>
-  {% endblock %}
+  
+    {% raw %}
+        {% extends 'base.html' %}
+     
+        {% block content %}
+            <form method="post" action="{% url 'criar_repositorio' %}">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Criar</button>
+            </form>
+        {% endblock %}
+    {% endraw %}
  
 Agora crie a view e o método a seguir  no arquivo **views.py**:
  
-  import requests 
-  from django.shortcuts import redirect
-  from .forms import *
+    import requests 
+    from django.shortcuts import redirect
+    from .forms import *
    
-  def cria_repositorio_github(token, nome, linguagem):
-      r = requests.post('http://localhost:8001/cria_repositorio/', data={'nome_repositorio':nome, 'token':token, 'linguagem':linguagem})
+    def cria_repositorio_github(token, nome, linguagem):
+        r = requests.post('http://localhost:8001/cria_repositorio/', data={'nome_repositorio':nome, 'token':token, 'linguagem':linguagem})
    
-  @login_required
-  def criar_repositorio(request):
-      if request.method == 'POST':
-          form = formRepositorio(request.POST)
-          if form.is_valid():
-              user = request.user
-              token = user.social_auth.get(provider='github').access_token
-              nome_repositorio = form.cleaned_data['nome']
-              linguagem = form.cleaned_data['linguagem']
-              r = cria_repositorio_github(token, nome_repositorio, linguagem)
-              return redirect('home')
-      else:
-          form = formRepositorio()
-      return render(request, 'repositorio.html', {'form':form})
+    @login_required
+    def criar_repositorio(request):
+        if request.method == 'POST':
+            form = formRepositorio(request.POST)
+            if form.is_valid():
+                user = request.user
+                token = user.social_auth.get(provider='github').access_token
+                nome_repositorio = form.cleaned_data['nome']
+                linguagem = form.cleaned_data['linguagem']
+                r = cria_repositorio_github(token, nome_repositorio, linguagem)
+                return redirect('home')
+        else:
+            form = formRepositorio()
+        return render(request, 'repositorio.html', {'form':form})
  
 A view **criar_repositorio** recebe o que o usuário digitou na tela, e em seguida chama a função cria_repositório_github() que realiza a comunicação com o micro serviço do github através de uma requisição POST. Este micro serviço foi desenvolvido previamente, utilizando a biblioteca PyGithub, e seu código poderá ser acessado neste [link](https://github.com/gabriellmb05/api-github-1). Para mais detalhes sobre quais métodos podem ser utilizados nesta biblioteca entre no [link](http://pygithub.readthedocs.io/en/latest/introduction.html). Ao logar com o github, a api social armazena o token de autorização no banco de dados. Dessa forma, quando for necessário realizar alguma comunicação com a api do Github, este poderá ser acessado como um atributo como pode ser visto na linha abaixo:
  
-token = user.social_auth.get(provider='github').access_token
+    token = user.social_auth.get(provider='github').access_token
  
 Agora adicione a seguinte linha no arquivo **home.html**:
- 
-  {% extends 'base.html' %}
+  
+    {% raw %}  
+        {% extends 'base.html' %}
 
-  {% block content %}
-    <p>Bem-vindo {{ user.username }}!</p>
-
-    <a href="{% url 'criar_repositorio' %}">Criar repositório</a>  #<----
-  {% endblock %}
+        {% block content %}
+            <p>Bem-vindo {{ user.username }}!</p>
+            <a href="{% url 'criar_repositorio' %}">Criar repositório</a>  #<----
+        {% endblock %}
+    {% endraw %}
  
 No arquivo **urls.py** adicione a seguinte linha:
  
-url(r'^criar_repositorio/$', core_views.criar_repositorio, name='criar_repositorio'),
+    url(r'^criar_repositorio/$', core_views.criar_repositorio, name='criar_repositorio'),
  
 Feito isso, o sistema estará pronto para realizar o login com o Github e criar um repositório com o nome escolhido e adicionando automaticamente um arquivo **.gitignore** com a linguagem escolhida. Execute o comando abaixo e realize os testes:
  
-  python3 manage.py runserver
+    python3 manage.py runserver
  
 Lembre-se de que deve estar na pasta onde o arquivo **manage.py** se encontra antes de executar o comando.
  
@@ -410,4 +417,4 @@ Lembre-se de que deve estar na pasta onde o arquivo **manage.py** se encontra an
 ## Referências
  
 [How to Add Social Login to Django](https://simpleisbetterthancomplex.com/tutorial/2016/10/24/how-to-add-social-login-to-django.html)
-[Django] (https://www.djangoproject.com/start/)
+[Django](https://www.djangoproject.com/start/)
