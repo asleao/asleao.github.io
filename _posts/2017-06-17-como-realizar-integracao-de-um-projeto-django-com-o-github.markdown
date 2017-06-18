@@ -253,7 +253,8 @@ Para poder dar permissão para a criação do repositório, é necessário que o
         'user:email'
     ]
  
-Vá até o arquivo **urls.py** e adicione as seguintes linhas:
+Vá até o arquivo **urls.py** e adicione as seguintes linhas dentro do bloco
+**URLPATTERNS**:
   
     from django.conf.urls import url, include
     from django.contrib import admin
@@ -329,7 +330,7 @@ Por fim, crie a view **home** no arquivo **views.py**:
  
 Essas são as configurações básicas da biblioteca. Em seguida será mostrado um exemplo, de como fazer uma autenticação e criação de um repositório.
  
-Para a autenticação com o github, na da pasta templates crie uma pasta com o nome **registration** e em seguida crie o arquivo **login.html** dentro desta com o seguinte conteúdo:
+Para a autenticação com o github, vá até a pasta templates e crie uma pasta com o nome **registration** e em seguida crie o arquivo **login.html** dentro desta com o seguinte conteúdo:
   
     {% raw %}
     {% extends 'base.html' %}
@@ -340,7 +341,7 @@ Para a autenticação com o github, na da pasta templates crie uma pasta com o n
     {% endblock %}
     {% endraw %}
  
-Pronto. Para testar se tudo está funcionando corretamente, vá até a pasta onde se encontra o arquivo **settings.py** pelo terminal e digite o comando:
+Pronto. Para testar se tudo está funcionando corretamente, vá até a pasta onde se encontra o arquivo **manage.py** pelo terminal e digite o comando:
  
     python3 manage.py runserver
  
