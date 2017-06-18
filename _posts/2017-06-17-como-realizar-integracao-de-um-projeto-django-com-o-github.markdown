@@ -253,8 +253,7 @@ Para poder dar permissão para a criação do repositório, é necessário que o
         'user:email'
     ]
  
-Vá até o arquivo **urls.py** e adicione as seguintes linhas dentro do bloco
-**URLPATTERNS**:
+Vá até o arquivo **urls.py** e adicione as seguintes linhas:
   
     from django.conf.urls import url, include
     from django.contrib import admin
@@ -408,7 +407,8 @@ Agora adicione a seguinte linha no arquivo **home.html**:
     {% endblock %}
     {% endraw %}
  
-No arquivo **urls.py** adicione a seguinte linha:
+No arquivo **urls.py** adicione a seguinte linha dentro do bloco
+**URLPATTERNS**:
  
     url(r'^criar_repositorio/$', core_views.criar_repositorio, name='criar_repositorio'),
  
