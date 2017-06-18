@@ -155,7 +155,7 @@ Para fazer a autenticação com o GitHub, utilizaremos a biblioteca social-auth-
  
 Utilize o projeto anterior com base para as próximas configurações e realize a instalação da biblioteca com o seguinte comando:
   
-  pip install social-auth-app-django
+    pip install social-auth-app-django
  
 Em seguida abra o arquivo **settings.py** , vá até a linha **INSTALLED_APPS** e insira a linha  'social_django':
  
