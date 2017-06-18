@@ -5,6 +5,11 @@ date:   2017-06-17
 categories: tutorial
 ---
 
+#### Autores:
+* André Spadetto Leão
+* Gabriel Bianchi
+* Gabriel Barbosa
+
 # Tutorial: Como realizar integração de um projeto Django com o GitHub
  
 Este tutorial tem como objetivo explicar o que é necessário configurar em um projeto Django para possibilitar a realização do login no sistema, utilizando a api do Github. Na primeira seção serão apresentados os pré-requisitos, na segunda será mostrado como configurar um projeto Django simples e na terceira será apresentado um exemplo simples de como realizar o login e criar um repositório no Github.
@@ -415,7 +420,10 @@ Feito isso, o sistema estará pronto para realizar o login com o Github e criar 
  
 Lembre-se de que deve estar na pasta onde o arquivo **manage.py** se encontra antes de executar o comando.
  
- 
+Todo o código implementado deste tutorial encontra-se no
+[link](https://github.com/asleao/tutorial-github).
+
+
 ## Referências
  
 [How to Add Social Login to Django](https://simpleisbetterthancomplex.com/tutorial/2016/10/24/how-to-add-social-login-to-django.html)
