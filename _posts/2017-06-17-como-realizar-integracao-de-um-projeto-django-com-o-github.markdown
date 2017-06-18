@@ -2,7 +2,7 @@
 layout: post
 title:  "Como realizar integração de um projeto Django com o Github"
 date:   2017-06-17
-categories: Tutorial
+categories: tutorial
 ---
 
 # Tutorial: Como realizar integração de um projeto Django com o GitHub
@@ -87,7 +87,6 @@ Para rodar um projeto, você deve entrar na pasta onde o arquivo **manage.py** e
  
     python3 manage.py runserver
  
-
  
 Para que o seu projeto fique bem estruturado, o Django possui um recurso chamado **app** que te permite modularizar o seu projeto. Assim o seu código ficará sempre organizado, facilitando sua leitura e eventuais manutenções.
  
@@ -148,7 +147,7 @@ Este comando criará as tabelas principais do django para a continuação do pro
     (env)
  
 Com as explicações feitas sobre a estrutura e os comandos do django, tem-se uma base para realizar a criação de qualquer projeto em django. 
- 
+
 ## 3 - Exemplo login com o Github
  
 Para fazer a autenticação com o GitHub, utilizaremos a biblioteca social-auth-app-django. Além de prover a autenticação com o GitHub ela fornece o serviço de autenticação com o Facebook, Twitter, entre outros.
@@ -184,7 +183,8 @@ Agora vá até **MIDDLEWARE_CLASSES** a adicione a seguinte linha:
       'django.contrib.auth.middleware.AuthenticationMiddleware',
       'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
       'django.contrib.messages.middleware.MessageMiddleware',
-      'django.middleware.clickjacking.XFrameOptionsMiddleware',   
+      'django.middleware.clickjacking.XFrameOptionsMiddleware',
+   
       'social_django.middleware.SocialAuthExceptionMiddleware',  # <--
   ]
  
@@ -296,8 +296,8 @@ Crie um arquivo com o nome **base.html** e adicione o seguinte conteúdo:
       <title>Trabalho LES</title>
   </head>
   <body>
-      {%block content%}
-      {% endblock %}
+    {%block content%}
+    {% endblock %}
   </body>
   </html>
  
@@ -305,10 +305,10 @@ Crie um arquivo com o nome **base.html** e adicione o seguinte conteúdo:
 Em seguida crie o arquivo **home.html** com o seguinte conteúdo:
  
   {% extends 'base.html' %}
-   
+
   {% block content %}
     <p>Bem-vindo {{ user.username }}!</p>
-   
+
   {% endblock %}
  
  
@@ -389,12 +389,12 @@ token = user.social_auth.get(provider='github').access_token
 Agora adicione a seguinte linha no arquivo **home.html**:
  
   {% extends 'base.html' %}
- 
-{% block content %}
-  <p>Bem-vindo {{ user.username }}!</p>
- 
-  <a href="{% url 'criar_repositorio' %}">Criar repositório</a>  #<----
-{% endblock %}
+
+  {% block content %}
+    <p>Bem-vindo {{ user.username }}!</p>
+
+    <a href="{% url 'criar_repositorio' %}">Criar repositório</a>  #<----
+  {% endblock %}
  
 No arquivo **urls.py** adicione a seguinte linha:
  
@@ -410,5 +410,4 @@ Lembre-se de que deve estar na pasta onde o arquivo **manage.py** se encontra an
 ## Referências
  
 [How to Add Social Login to Django](https://simpleisbetterthancomplex.com/tutorial/2016/10/24/how-to-add-social-login-to-django.html)
-[Django](https://www.djangoproject.com/start/)
- 
+[Django] (https://www.djangoproject.com/start/)
