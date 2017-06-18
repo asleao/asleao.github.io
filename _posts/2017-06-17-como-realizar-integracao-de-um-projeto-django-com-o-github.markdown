@@ -325,7 +325,7 @@ Por fim, crie a view **home** no arquivo **views.py**:
    
     @login_required
     def home(request):
-        return render(request, 'templates/home.html')
+        return render(request, 'home.html')
  
 Essas são as configurações básicas da biblioteca. Em seguida será mostrado um exemplo, de como fazer uma autenticação e criação de um repositório.
  
