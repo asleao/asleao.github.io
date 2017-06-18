@@ -5,10 +5,7 @@ date:   2017-06-17
 categories: tutorial
 ---
 
-#### Autores:
-* André Spadetto Leão
-* Gabriel Bianchi
-* Gabriel Barbosa
+#### Escrito por: [André Spadetto Leão](https://github.com/asleao),[Gabriel Bianchi](https://github.com/gabriellmb05/),[Gabriel Barbosa](https://github.com/ginbar)
 
 # Tutorial: Como realizar integração de um projeto Django com o GitHub
  
