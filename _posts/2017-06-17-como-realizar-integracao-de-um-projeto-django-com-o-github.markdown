@@ -51,7 +51,7 @@ Em seguida, para instalar o django e os módulos do exemplo, execute o comando:
  
     pip install django
  
-###Criação e configuração do Projeto    
+### Criação e configuração do Projeto    
  
 Para criar o projeto, em Django, entre na pasta "tutorial-django" e execute o comando:
  
@@ -236,7 +236,7 @@ Agora vá até o arquivo **settings.py** e adicione a seguinte linhas no final d
     SOCIAL_AUTH_GITHUB_KEY = <client_id>
     SOCIAL_AUTH_GITHUB_SECRET = <client_secret>
  
-O calor de **client_id** e **client_secret** devem estar entre aspas simples. Exemplo:
+O valor de **client_id** e **client_secret** devem estar entre aspas simples. Exemplo:
   
     SOCIAL_AUTH_GITHUB_KEY = '44fd4145a8d85fda4ff1'
  
@@ -289,30 +289,32 @@ Dentro da pasta **app** crie uma pasta chamada **templates**:
 Esta pasta é responsável por conter as páginas html do projeto. 
  
 Crie um arquivo com o nome **base.html** e adicione o seguinte conteúdo:
- 
-    {{{% load staticfiles %}}}
+    
+    {% raw %}
+    {% load staticfiles %}
     <!DOCTYPE html>
     <html>
     <head>
         <title>Trabalho LES</title>
     </head>
      <body>
-        {{{%block content%}}}
-        {{{% endblock %}}}
+        {%block content%}
+        {% endblock %}
     </body>
     </html>
+    {% endraw %}
  
  
 Em seguida crie o arquivo **home.html** com o seguinte conteúdo:
  
+    {% raw %}
+    {% extends 'base.html' %}
 
-    {{{% extends 'base.html' %}}}
-
-    {{{% block content %}}}
+    {% block content %}
          <p>Bem-vindo {{ user.username }}!</p>
 
-    {{{% endblock %}}}
- 
+    {% endblock %}
+    {% endraw %}
  
 Por fim, crie a view **home** no arquivo **views.py**:
  
@@ -328,13 +330,13 @@ Essas são as configurações básicas da biblioteca. Em seguida será mostrado 
 Para a autenticação com o github, na da pasta templates crie uma pasta com o nome **registration** e em seguida crie o arquivo **login.html** dentre desta com o seguinte conteúdo:
   
     {% raw %}
-        {% extends 'base.html' %}
+    {% extends 'base.html' %}
      
-        {% block content %}
-            <h2>Login</h2>
-            <a href="{% url 'social:begin' 'github' %}">Login with GitHub</a><br>
-        {% endblock %}
-    { % endraw %}
+    {% block content %}
+        <h2>Login</h2>
+        <a href="{% url 'social:begin' 'github' %}">Login with GitHub</a><br>
+    {% endblock %}
+    {% endraw %}
  
 Pronto. Para testar se tudo está funcionando corretamente, vá até a pasta onde se encontra o arquivo **settings.py** pelo terminal e digite o comando:
  
@@ -344,24 +346,24 @@ Entre no navegador e digite **localhost:8000** e tente realizar o login clicando
  
 Para testar a funcionalidade de criar um repositório no Github criamos um formulário onde o usuário digitará o nome do repositório e a linguagem do gitignore. Crie um arquivo dentro da pasta **app** com o nome **forms.py** e insira as seguintes linhas:
     {% raw %}
-     from django import forms
+    from django import forms
    
-     class formRepositorio(forms.Form):
-         nome = forms.CharField(label='Nome do repositório:', max_length=100)
+    class formRepositorio(forms.Form):
+        nome = forms.CharField(label='Nome do repositório:', max_length=100)
         linguagem = forms.CharField(label='Linguagem:', max_length=100)
-     {% endraw %}
+    {% endraw %}
 Em seguida cria um arquivo com o nome **repositorio.html** na pasta templates com o seguinte conteúdo:
   
     {% raw %}
-        {% extends 'base.html' %}
+    {% extends 'base.html' %}
      
-        {% block content %}
-            <form method="post" action="{% url 'criar_repositorio' %}">
-                {% csrf_token %}
-                {{ form.as_p }}
-                <button type="submit">Criar</button>
-            </form>
-        {% endblock %}
+    {% block content %}
+        <form method="post" action="{% url 'criar_repositorio' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Criar</button>
+         </form>
+    {% endblock %}
     {% endraw %}
  
 Agora crie a view e o método a seguir  no arquivo **views.py**:
@@ -395,12 +397,12 @@ A view **criar_repositorio** recebe o que o usuário digitou na tela, e em segui
 Agora adicione a seguinte linha no arquivo **home.html**:
   
     {% raw %}  
-        {% extends 'base.html' %}
+    {% extends 'base.html' %}
 
-        {% block content %}
-            <p>Bem-vindo {{ user.username }}!</p>
-            <a href="{% url 'criar_repositorio' %}">Criar repositório</a>  #<----
-        {% endblock %}
+    {% block content %}
+         <p>Bem-vindo {{ user.username }}!</p>
+         <a href="{% url 'criar_repositorio' %}">Criar repositório</a>  #<----
+    {% endblock %}
     {% endraw %}
  
 No arquivo **urls.py** adicione a seguinte linha:
@@ -417,4 +419,4 @@ Lembre-se de que deve estar na pasta onde o arquivo **manage.py** se encontra an
 ## Referências
  
 [How to Add Social Login to Django](https://simpleisbetterthancomplex.com/tutorial/2016/10/24/how-to-add-social-login-to-django.html)
-[Django](https://www.djangoproject.com/start/)
+[Documentacao do Django](https://www.djangoproject.com/start/)
