@@ -17,7 +17,7 @@ Por conta da substituição do trabalho manual pelo automatizado, postos de trab
 
 * Qualidade: A tecnologia permite produzir produtos com um padrão de qualidade pré definido. No setor automobilístico, por exemplo, permite produzir peças com maior precisão. 
 
-**[3]. Cite 3 pontos negativos do uso da tecnologia informática no ambiente de trabalho.** [(referência)](https://www.webartigos.com/artigos/pontos-positivos-e-negativos-da-tecnologia/68349/)
+**3. Cite 3 pontos negativos do uso da tecnologia informática no ambiente de trabalho.** [(referência)](https://www.webartigos.com/artigos/pontos-positivos-e-negativos-da-tecnologia/68349/)
 
 * Sedentarismo.
 
@@ -57,11 +57,16 @@ De acordo com o [conceito](https://www.significados.com.br/mobilidade-social/) d
 
 **11. Como a tecnologia no trabalho afeta a qualidade de vida da sociedade ?**
 
-Conforme citado a questão [3], a tecnologia pode afetar negativamente na qualidade de vida da sociedade. Porém, também pode afetar positivamente, por exemplo, na mobilidade urbana onde temos cada vez mais sistemas que auxiliam o empregado a saber como anda o transito na sua cidade, em qual horário vai passar a condução que ele pega para voltar para a casa e de modo geral sistemas que controlam o fluxo do transito da sua região.  
+Conforme citado a questão 3, a tecnologia pode afetar negativamente na qualidade de vida da sociedade. Porém, também pode afetar positivamente, por exemplo, na mobilidade urbana onde temos cada vez mais sistemas que auxiliam o empregado a saber como anda o transito na sua cidade, em qual horário vai passar a condução que ele pega para voltar para a casa e de modo geral sistemas que controlam o fluxo do transito da sua região.  
 
-**12. Como a tecnologia no trabalho se relaciona com o consumo de recursos naturais (pela cidade/sociedade) ?**
+**12. Como a tecnologia no trabalho se relaciona com o consumo de recursos naturais (pela cidade/sociedade) ?** [referência](https://www.ecycle.com.br/component/content/article/37-tecnologia-a-favor/2077-como-a-tecnologia-pode-trabalhar-a-favor-do-meio-ambiente.html)
 
+Com o crescimento da população, o planeta recebe cada vez uma carga maior de poluentes. A tecnologia se relaciona então na produção de soluções ajudem o planeta a ser mais sustentável e a combater esses problemas de forma eficiente.
 
 **13. Como a tecnologia no trabalho se relaciona com políticas públicas ?**
 
+De acordo com o [conceito](http://www.meioambiente.pr.gov.br/arquivos/File/coea/pncpr/O_que_sao_PoliticasPublicas.pdf) de políticas públicas, podemos ter a capacitação dos cidadãos com a oferta de cursos profissionalizantes, para que estes possam ser incluídos no mercado de trabalho. 
+
 **14. Cite três aplicativos de computação móvel e analise como eles alteraram as relações dos seus usuários com o mercado do trabalho e do consumo.**
+
+Um aplicativo móvel que trouxe comodidade para os seus usuários foi o iFood, onde o usuário pode realizar o seu pedido sem a necessidade de falar com ninguém e ter que explicar o que deseja. No aplicativo ele pode ver o cardápio do estabelecimento, escolher o que quer e realizar o seu pagamento. Além de poder verificar quais estabelecimentos estão com promoções no momento. Outro aplicativo é o WhatsApp que tem como foco principal, facilitar a comunicação do usuário. Ele é vastamente utilizado por estabelecimentos do setor alimentício, para realizar seus pedidos, além de ser uma ferramenta utilizada no meio empresarial onde a comunicação entre os membros de uma equipe pode ser toda feita via o aplicativo. Por fim, podemos citar o Instagram que funciona como um meio de divulgação para empresas, possibilitando um melhor marketing para divulgarem seus produtos, promoções e até mesmo permitir que fotógrafos a divulguem os seus trabalhos e recebam feedback. 
