@@ -17,13 +17,15 @@ Por conta da substituição do trabalho manual pelo automatizado, postos de trab
 
 * Qualidade: A tecnologia permite produzir produtos com um padrão de qualidade pré definido. No setor automobilístico, por exemplo, permite produzir peças com maior precisão. 
 
-**3. Cite 3 pontos negativos do uso da tecnologia informática no ambiente de trabalho.**
+**3. Cite 3 pontos negativos do uso da tecnologia informática no ambiente de trabalho.** [(referência)](https://www.webartigos.com/artigos/pontos-positivos-e-negativos-da-tecnologia/68349/)
 
 * Sedentarismo.
+
 * Relaciomento pessoal: As pessoas cada vez mais substituem a interação pessoal pela digital. 
+
 * Dependência: O uso dessas tecnologias, causa uma dependência nas pessoas que estão sempre ligadas no celular ou navegando na internet. Criando uma necessidade de estar sempre utilizando estes equipamentos.
 
-[referencia](https://www.webartigos.com/artigos/pontos-positivos-e-negativos-da-tecnologia/68349/)
+
 
 **4. A informática/tecnologia traz novas oportunidades de emprego ? Para quem ?**
 
@@ -55,8 +57,10 @@ De acordo com o [conceito](https://www.significados.com.br/mobilidade-social/) d
 
 **11. Como a tecnologia no trabalho afeta a qualidade de vida da sociedade ?**
 
+Conforme citado a questão [3][3.], a tecnologia pode afetar negativamente na qualidade de vida da sociedade. Porém, também pode afetar positivamente, por exemplo, na mobilidade urbana onde temos cada vez mais sistemas que auxiliam o empregado a saber como anda o transito na sua cidade, em qual horário vai passar a condução que ele pega para voltar para a casa e de modo geral sistemas que controlam o fluxo do transito da sua região.  
 
 **12. Como a tecnologia no trabalho se relaciona com o consumo de recursos naturais (pela cidade/sociedade) ?**
+
 
 **13. Como a tecnologia no trabalho se relaciona com políticas públicas ?**
 
