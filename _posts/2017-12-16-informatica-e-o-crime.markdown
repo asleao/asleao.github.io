@@ -68,12 +68,13 @@ Deep Web (também chamada de Deepnet, Web Invisível, Undernet, Web Obscura ou W
 
 A internet alterou a dinâmica do crime de preconceito ou discriminação, por exemplo. Onde os criminosos fazem comentários nas redes sociais, fóruns, chats, e-mails, e outros, de forma negativa sobre religião, etnias, raças, etc.
 
-**13. Qual a relação do cibercrime com a economia ?**
+**13. Qual a relação do cibercrime com a economia ?** [referência](http://jconline.ne10.uol.com.br/canal/economia/internacional/noticia/2017/05/31/cibercrimes-causaram-prejuizos-de-bilhoes-de-dolares-no-mundo-em-2016-287033.php)
 
+Hackers causaram prejuízos de bilhões de dolares somente no ano de 2016 afetando a economia mundial, fazendo com que empresas devam investir cada vez mais em segurança. Um custo que está cada vez mais elevado.
 
 **14. Como o cibercrime afeta a área de sistemas de informação ?**
 
-
+A área de sistemas de informação é afetada diretamente os sistemas que são construídos devem se preocupar cada vez mais com o quesito segurança. 
 
 **15. Quais disciplinas do curso de BSI que estão, ou podem estar, associadas ao combate ao crime de internet ?**
 
