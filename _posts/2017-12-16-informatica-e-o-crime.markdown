@@ -27,14 +27,17 @@ Pedofilia: Internautas criam sites ou fornecem conteúdo (imagens e vídeos) rel
 
 O computador é o principal equipamento utilizado para a realização dos cibercrimes. Portanto, ele pode e é usado para praticar diversos atos ilegais como por exemplo, o roubo ou divulgação de informações confidênciais.
 
-**4. Cite 3 organizações nacionais e 3 organizações internacionais que tem por objetivo combater o cibercrime.**[referência_1](http://tiinside.com.br/tiinside/seguranca/mercado-seguranca/01/06/2017/ibm-e-cisco-unem-forcas-para-combater-o-cibercrime/) [referência_2](https://www.globalservices.bt.com/br/pt/news/bt-and-interpol-unite-to-fight-cybercrime) [referência_3](http://new.safernet.org.br/content/delegacias-cibercrimes) [referência_4](http://www.pf.gov.br/agencia/noticias/2017/05/diretoria-de-crimes-ciberneticos-passara-a-ser-comandada-por-perito-federal) [referência_5](http://computerworld.com.br/ish-tecnologia-investe-r-12-milhao-em-novo-servico-contra-hackers)
+**4. Cite 3 organizações nacionais e 3 organizações internacionais que tem por objetivo combater o cibercrime.** [referência_1](http://tiinside.com.br/tiinside/seguranca/mercado-seguranca/01/06/2017/ibm-e-cisco-unem-forcas-para-combater-o-cibercrime/) [referência_2](https://www.globalservices.bt.com/br/pt/news/bt-and-interpol-unite-to-fight-cybercrime) [referência_3](http://new.safernet.org.br/content/delegacias-cibercrimes) [referência_4](http://www.pf.gov.br/agencia/noticias/2017/05/diretoria-de-crimes-ciberneticos-passara-a-ser-comandada-por-perito-federal) [referência_5](http://computerworld.com.br/ish-tecnologia-investe-r-12-milhao-em-novo-servico-contra-hackers)
 
 Das organizações internacionais podemos citar a Cisco, IBM e INTERPOL. Já as nacionais temos a SaferNet, Polícia Federal e a ISH. 
 
-**5. Qual a definição de hacker e qual a sua associação com o tema cibercrime ?**
+**5. Qual a definição de hacker e qual a sua associação com o tema cibercrime ?** [referência](https://pt.wikipedia.org/wiki/Hacker)
 
+Em informática, hacker é um indivíduo que se dedica, com intensidade incomum, a conhecer e modificar os aspectos mais internos de dispositivos, programas e redes de computadores. Graças a esses conhecimentos, um hacker frequentemente consegue obter soluções e efeitos extraordinários, que extrapolam os limites do funcionamento "normal" dos sistemas como previstos pelos seus criadores; incluindo, por exemplo, contornar as barreiras que supostamente deveriam impedir o controle de certos sistemas e acesso a certos dados. Hackers que usam seu conhecimento para fins ilegais ou prejudiciais são chamados crackers, também conhecidos como "Black Hat". Sendo assim, eles estão diretamente associados ao cibercrime pois são os que realizam os mesmos.
 
 **6. Como o cibercrime afeta o comportamento do usuário de internet ?**
+
+O cibercrime afeta o comportamento do usuário da internet, fazendo com que ele precise de utilizar softwares que auxiliem a sua segurança e também com que ele deva ser cada vez mais cauteloso em sua navegação. 
 
 **7. Cite 3 leis brasileiras que existem por causa do tema cibercrime.** [referência](https://drluizfernandopereira.jusbrasil.com.br/artigos/111858284/crimes-pela-internet-novas-leis-reforcam-a-luta-contra-essas-acoes)
 
@@ -63,9 +66,13 @@ Deep Web (também chamada de Deepnet, Web Invisível, Undernet, Web Obscura ou W
 
 **12. Como a internet modifica/afeta a dinâmica de um crime que já existia antes da internet ? Cite um exemplo.**
 
+A internet alterou a dinâmica do crime de preconceito ou discriminação, por exemplo. Onde os criminosos fazem comentários nas redes sociais, fóruns, chats, e-mails, e outros, de forma negativa sobre religião, etnias, raças, etc.
+
 **13. Qual a relação do cibercrime com a economia ?**
 
+
 **14. Como o cibercrime afeta a área de sistemas de informação ?**
+
 
 
 **15. Quais disciplinas do curso de BSI que estão, ou podem estar, associadas ao combate ao crime de internet ?**
