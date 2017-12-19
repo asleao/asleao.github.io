@@ -5,7 +5,7 @@ date:   2017-12-16 12:00:00 -0300
 categories: Informática e Sociedade
 ---
 
-![mapa conceitual]({{ site.url }}/assets/mapa-conceitual-exemplo_bg.jpg)
+![mapa conceitual]({{ asleao.github.io }}/assets/mapa-conceitual-exemplo_bg.jpg)
 
 **1. A informática/tecnologia diminui a oferta de postos de trabalho ?**
 
