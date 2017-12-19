@@ -5,6 +5,8 @@ date:   2017-12-16 12:00:00 -0300
 categories: Informática e Sociedade
 ---
 
+![mapa conceitual]({{ site.url }}/assets/mapa-conceitual-exemplo_bg.jpg)
+
 **1. A informática/tecnologia diminui a oferta de postos de trabalho ?**
 
 Por conta da substituição do trabalho manual pelo automatizado, postos de trabalhos foram extintos o que consequentemente gerou um aumento na taxa de desemprego nos países. Acredito que ao mesmo tempo que a tecnologia eliminou alguns tipos de trabalho ela também gerou outros, porém as pessoas agora precisam estar mais qualificadas técnicamente. Porém, mesmo assim, acredito que a tecnologia diminui sim a oferta de postos de trabalho, visto que a tendência será sempre substituir o trabalho manual pelo automátizado no que for possível.
